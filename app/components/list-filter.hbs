@@ -1,0 +1,16 @@
+<div class="input-title">
+    <label>
+        <span>Where would you like to stay at?</span>
+        {{input
+        value=this.value
+        class="input-title"
+        }}
+        <button class="search-button" type="button" {{action "handleFilterEntry" }}>Search</button>
+    </label>
+    {{!-- <br><br>
+    <p>Are you looking for place at ....{{this.value}}</p> --}}
+
+</div>
+
+
+{{yield this.results}}
